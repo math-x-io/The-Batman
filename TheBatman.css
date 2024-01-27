@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0, 0, 0, 1);
+    overflow: hidden;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+#main-text {
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    color: #de0707;
+}
+
+svg {
+    width: 90vh;
+    height: 90vh;
+    animation: animate 2s linear infinite;
+    cursor: pointer;
+}
+
+/*animation du svg avec changement de couleur  */
+@keyframes animate {
+    0% {
+        stroke: #de0707;
+    }
+
+    50% {
+        stroke: #000;
+    }
+
+    100% {
+        stroke: #de0707;
+    }
+}
+
+
+video {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+/*animation du svg avec une légère lueur en arriere plan des  */
+@keyframes animate {}
+
+@media screen and (max-width: 768px) {
+
+    #main-text {
+        font-size: 1.4rem;
+    }
+
+    svg {
+        width: 90vw;
+        height: 90vw;
+    }
+
+}
