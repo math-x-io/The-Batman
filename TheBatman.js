@@ -1,4 +1,4 @@
-var text = "I am Vangeance, I am the night, I am Batman.";
+var text = "I am Vengeance, I am the Night, I am Batman.";
 var i = 0;
 var speed = 70;
 var wait = 1000;
